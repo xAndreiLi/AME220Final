@@ -1,0 +1,43 @@
+Feb 10, 2020
+Attributes can be edited in JS by accessing it as a property of the element.
+innerHTML is a property that refers to the content inside of the tag
+
+declaration definition and invocation life cycle of functions
+definition is also called assignment
+why are they evevn discussing this
+so far we have only looked at one statement
+now we can group them under one function
+add to the body onLoad=main
+
+there is no entrypoint in javascript
+it interperets one line at a time
+this is a good example
+this is how you define a function
+function (name){(code block)}
+
+javascript has to come after the tag that it is trying to access
+document.write()
+will overwrite the entire document
+console.log() will write to the console but not the document
+when writing a javascript program, you are writing a list of javascript
+statements
+there is only one type of container
+
+strongly typed languages: c, java, c++
+javascript is a loosely typed language
+type refers to datatypes
+
+strongly typed languages require that you declare the type of a variable
+the data type of that variable cannot change afterwards
+
+javascript is an interpreted language, and therefore, variables can change
+types.
+
+variables vs constants (literals)
+variables hold data and can change
+constants hold data and do not change
+
+life cycle of a variable:
+declaration, assignment/definition, usage
+
+functions in javascript are variables

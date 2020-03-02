@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  </head>
+<style>
+  img{
+display: block;
+height: 300px;
+margin: auto;
+  }
+  body{
+display: grid;
+width: 100%;
+background-color: grey;
+  }
+  button{
+width: 50px;
+background-color: lightblue;
+color: blue;
+margin: auto;
+  }
+  </style>
+  <body>
+    <img id="image">
+    <button onclick="document.getElementById('image').src=imgs[0]"> 1 </button>
+    <button onclick="document.getElementById('image').src=imgs[1]"> 2 </button>
+    <button onclick="document.getElementById('image').src=imgs[2]"> 3 </button>
+  </body>
+  <script>
+      var imgs = [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Acer_diabolicum_9_%28medium_crop%29.jpg/320px-Acer_diabolicum_9_%28medium_crop%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Delos_Museum_Mosaik_Dionysos_09.jpg/240px-Delos_Museum_Mosaik_Dionysos_09.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg/800px-CSIRO_ScienceImage_3881_Five_Antennas_at_Narrabri_-_restoration1.jpg"
+      ];
+      document.getElementById("image").src=imgs[0];
+  </script>
+</html>

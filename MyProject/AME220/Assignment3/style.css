@@ -1,0 +1,103 @@
+body{
+  background-color: #0a1128;
+  color: #fefcfb;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+  display: inline-grid;
+  width: 100%;
+}
+
+.underlined{
+  border-bottom: 1px solid #fefcfb;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+h1{
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+h2{
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: underline;
+}
+
+p{
+  margin: auto;
+  width: 70%;
+  text-align: center;
+}
+
+img{
+  width: 90px;
+  position: absolute;
+  TOP: 10px;
+  LEFT: 10px;
+}
+
+a{
+  margin: auto;
+  color: #fefcfb;
+  padding-bottom: 6px;
+}
+
+table{
+  width: 30%;
+  margin: auto;
+}
+
+ol{
+  margin: auto;
+  text-align: center;
+}
+
+ul{
+  margin: auto;
+}
+
+#accordion input{
+  display: none;
+  margin: auto;
+}
+
+#accordion label{
+  background-color: #27476e;
+  display: block;
+  z-index: 2;
+  text-align: center;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+#accordion label:hover{
+  background-color: #122235;
+}
+
+#accordion input:checked + label{
+  background: #122235;
+}
+
+#accordion article{
+  background: #0f1a3d;
+  height: 0px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#accordion input:checked ~ article{
+  height: auto;
+}
+
+#accordion{
+  width: 60%;
+  display: inline-grid;
+  margin: auto;
+}

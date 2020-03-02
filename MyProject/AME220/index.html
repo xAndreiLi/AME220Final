@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>My First Website</title>
+    <script>
+      function startClock() {
+        var date = new Date();
+        var h = date.getHours();
+        var m = date.getMinutes();
+        var s = date.getSeconds();
+
+        h = formatTime(h);
+        m = formatTime(m);
+        s = formatTime(s);
+
+        document.getElementById("time").innerHTML =
+        h + ":" + m + ":" + s;
+        setTimeout(startClock, 500);
+
+      }
+      function formatTime(i) {
+        if (i < 10){
+          i = "0" + i;
+        }
+        return i;
+      }
+    </script>
+    <style>
+      body{
+        background-color:beige;
+      }
+      #time{
+        text-align: center;
+        font-family: "Calibri";
+        font-size: 30pt;
+      }
+      #text{
+        text-align: center;
+        display: inline-block;
+      }
+      #text-wrap{
+        width: 100%;
+        display: inline-flex;
+      }
+      .text{
+        font-family: 'Baskervville', serif;
+        font-size: 60pt;
+      }
+    </style>
+  </head>
+  <body onload="startClock()">
+    <div class="text" id="time"></div>
+    <div id="text-wrap">
+      <div class="text" id="text"><span style="margin-left:-200px">Fuck</span><br>
+        <span style="margin-left:0px">you</span><br><span style="margin-left:300px">Tyrus!!!</span>
+      </div>
+    </div>
+  </body>
+</html>
